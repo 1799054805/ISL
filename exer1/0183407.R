@@ -12,6 +12,12 @@ plot(horsepower,mpg)
 abline(lm.fit,lwd=3,col="red")
 par(mfrow=c(2,2))
 plot(lm.fit)
+#(a)
+#1.原假设为horsepower与mpg不相关,因为p值远小于0.05,拒绝原假设,认为horsepower和mpg有关系。
+#2. R-squared为0.6059,60.5948%的mpg可以被horsepower解释。
+#3.线性回归系数小于零,mpg与horsepower负相关。
+#4.mpg的预测值是24.46708,95%置信区间为(23.97308,24.96108),95%预测区间为(14.8094,34.12476)。
+#(c)mpg与horsepower非线性相关。
 
 #9.
 pairs(Auto)
